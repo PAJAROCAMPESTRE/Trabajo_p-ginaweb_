@@ -1,0 +1,49 @@
+contact.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres, en este caso UTF-8, para admitir caracteres especiales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la visualización en dispositivos móviles. -->
+    <title>JAIME_VICO</title> <!-- Título que aparece en la pestaña del navegador. -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Vincula un archivo CSS externo para el diseño. -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!--Para poder usar mas tipos de letras -->
+
+</head>
+<body>
+    <!-- Contenido principal de la página -->
+    <header>
+        <!-- Encabezado principal -->
+        <h1>¡Contacta conmigo!</h1> <!-- Título principal de la página. -->
+        <nav>
+            <!-- Menú de navegación -->
+            <ul>
+                <li><a href="../index.html">Volver al menú</a></li> <!-- Volver al menú. -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <p>¡Estaré encantado de responder a tus mensajes!</p>
+        <!-- Contenido principal -->
+        <div class="form-container">
+            <form action="/contact" method="POST">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br><br>
+        
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="Escribe tu correo" required><br><br>
+        
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="50" placeholder="Escribe tu mensaje aquí..." required></textarea><br><br>
+        
+                <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+topic.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres, en este caso UTF-8, para admitir caracteres especiales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la visualización en dispositivos móviles. -->
+    <title>JAIME_VICO</title> <!-- Título que aparece en la pestaña del navegador. -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Vincula un archivo CSS externo para el diseño. -->
+</head>
+<body>
+    <!-- Contenido principal de la página -->
+    <header>
+        <!-- Encabezado principal -->
+        <h1>Partido a partido</h1> <!-- Título principal de la página. -->
+        <nav>
+            <!-- Menú de navegación -->
+            <ul>
+                <li><a href="#seccion1">Historia.</a></li> <!-- Enlace a la Sección 1. -->
+                <li><a href="#seccion2">Plantilla actual.</a></li> <!-- Enlace a la Sección 2. -->
+                <li><a href="#seccion3">Coraje y corazón.</a></li> <!-- Enlace a la Sección 3. -->
+                <li><a href="#seccion4">¿Ganará el atleti la liga?</a></li> <!-- Enlace a la Sección 4. -->
+                <li><a href="../index.html">Volver al menú</a></li> <!-- Volver al menú. -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contenido principal -->
+        <section id="seccion1">
+            <!-- Sección 1 -->
+            <h2>Historia.</h2> <!-- Subtítulo para esta sección. -->
+            <p>El Atlético de Madrid, conocido como el "Atleti", es uno de los clubes de fútbol más importantes de España y de Europa. Su historia se remonta al 26 de abril de 1903, cuando un grupo de estudiantes vascos fundó el club como una filial del Athletic Club de Bilbao. Con el tiempo, se desvinculó y comenzó a trazar su propio camino.</p>
+            <h3>Primeros años.</h3>
+            <p>El club empezó jugando en ligas regionales hasta que en 1928 se unió a la recién creada Primera División de España. Sin embargo, su desempeño inicial fue irregular, alternando entre Primera y Segunda División.</p>
+            <h3>La consolidación y primeros títulos.</h3>
+            <p>En los años 1940, el Atlético comenzó a destacar tras la fusión con el Aviación Nacional, que le dio estabilidad financiera y el nombre de "Atlético Aviación" (que luego volvería a ser Atlético de Madrid). Durante esta década ganó dos ligas (1939-40 y 1940-41), marcando el inicio de su éxito en el fútbol español.
+
+                En los años 1950 y 1960, bajo entrenadores legendarios como Helenio Herrera, el Atlético consolidó su reputación, ganando varias ligas y copas. También se destacó en competiciones europeas, siendo subcampeón de la Copa de Europa en 1974, tras perder ante el Bayern de Múnich.</p>
+            <h3>Época dorada y declive.</h3>
+            <p>Durante los años 1970, el club vivió una época dorada, ganando ligas y copas. En 1974, también conquistó la Copa Intercontinental, siendo uno de los pocos equipos españoles con ese título.
+
+                Sin embargo, los años 1980 y 1990 trajeron altibajos, marcados por problemas económicos y administrativos. En 1996, el club resurgió con un histórico "doblete", ganando la liga y la Copa del Rey bajo el mando de Radomir Antić. Pero poco después entró en crisis, descendiendo a Segunda División en 2000.</p>
+            <h3>Renacimiento bajo el Cholo Simeone.</h3>
+            <p>El club regresó a Primera en 2002, pero su verdadero renacimiento llegó en 2011 con la llegada de Diego "Cholo" Simeone como entrenador. Bajo su liderazgo, el Atlético ganó varios títulos nacionales e internacionales, incluyendo:
+
+                La Liga en 2013-14 y 2020-21.
+                La Europa League en 2012, 2018.
+                La Supercopa de Europa en 2012 y 2018.
+                Dos finales de la Liga de Campeones en 2014 y 2016, ambas perdidas contra el Real Madrid.</p>
+            <h3>Actualidad.</h3>
+            <p>Hoy en día, el Atlético de Madrid es reconocido como un club de élite, con un estilo combativo y disciplinado bajo Simeone. Juega en el moderno estadio Cívitas Metropolitano desde 2017, tras dejar el icónico Vicente Calderón. Además, sigue compitiendo al máximo nivel en La Liga y competiciones europeas, consolidándose como uno de los clubes más respetados del mundo.
+
+                El Atlético simboliza lucha, perseverancia y pasión, reflejando su lema no oficial: "Nunca dejes de creer".</p>
+        </section>
+
+        <section id="seccion2">
+            <!-- Sección 2 -->
+            <h2>Plantilla actual.</h2>
+            <img src="../Imágenes/plantilla.jpg" alt="Jugadores del Atlético de madrid." width="1700" height="900"> <!-- Imagen con una descripción alternativa. -->
+        </section>
+
+        <section id="seccion3">
+            <!-- Sección 3 -->
+            <h2>Coraje y corazón.</h2>
+            <iframe 
+                width="1700" 
+                height="900" 
+                src="https://youtu.be/MvnjQqXw6p4" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section id="seccion4">
+            <!-- Sección 4 -->
+            <h2>¿Ganará el Atleti la liga?</h2>
+            <form action="/submit" method="POST">
+                <label for="respuesta">Tu respuesta:</label><br>
+                <input type="radio" id="si" name="respuesta" value="si">
+                <label for="si">Sí</label><br>
+                <input type="radio" id="no" name="respuesta" value="no">
+                <label for="no">No</label><br>
+        
+                <label for="comentarios">Comentarios (opcional):</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Explica tu respuesta..."></textarea><br><br>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
